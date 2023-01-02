@@ -44,6 +44,7 @@ export default function ServiceDetail(props,{navigation} ) {
       category: "Gardner",
     },
   ];
+  
   let reviews = [
     {
       username: "ifraRiaz",
