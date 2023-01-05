@@ -274,7 +274,7 @@ export default function ServiceDetail(props,{navigation} ) {
                       },
                     }}
                     onPress={() => {
-                      navigation.navigate("ServiceDetail", {
+                      props.navigation.navigate("ServiceDetail", {
                         title: item.title,
                         desc: item.desc,
                       });

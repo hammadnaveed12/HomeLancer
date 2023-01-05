@@ -21,7 +21,7 @@ function ChatBox({navigation}) {
     ]
   return (
     <View style={{ flex: 1,marginTop:50 }}>
-      <View style={{flex:0.2}}>
+      <View style={{flex:0.1}}>
 <Text style={{fontSize:30,fontWeight:"900",marginLeft:10}}>Inbox</Text>
 <View style={{borderBottomColor:"grey",borderBottomWidth:0.2}}></View>
       </View>
