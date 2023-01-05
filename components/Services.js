@@ -25,9 +25,9 @@ function Services({navigation}) {
           category: "Cook",
         },
         {
-          title: "Cooking Service",
+          title: "Gardening service",
           desc: "I will take care of your plants. I will do gardening for you for one day. For monthly basis contact me",
-          distance: 1.2,
+          distance: 2.2,
           reviews: 4.9,
           price: 1000,
           loc: "Lahore",
@@ -42,7 +42,7 @@ function Services({navigation}) {
             loc: "Lahore",
             category: "Maid",
           },
-          
+
           {
             title: "Cooking Service",
             desc: "I will cook one time lunch. I will cut all the vegetables also and will cook delicious lunch for you.",
@@ -86,7 +86,7 @@ function Services({navigation}) {
             reviews: 4.9,
             price: 1000,
             loc: "Lahore",
-            category: "Gardner",
+            category: "Cook",
           },
       ];
   return (

@@ -44,7 +44,7 @@ export default function ServiceDetail(props,{navigation} ) {
       category: "Gardner",
     },
   ];
-  
+
   let reviews = [
     {
       username: "ifraRiaz",
@@ -67,12 +67,14 @@ export default function ServiceDetail(props,{navigation} ) {
       date: "November 01",
       star: "5.0",
     },
+    
   ];
   let included = [
     "Clean 2 rooms",
     "Clean 1 lounge",
     "2 hours service",
     "Dishwashing",
+    "Bake"
   ];
   return (
     <View style={{ backgroundColor: "#fff", marginTop: 20, flex: 1 }}>
