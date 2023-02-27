@@ -2,13 +2,12 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from "./HomeScreen"
-import SettingsScreen from './SettingsScreen'
-import Bookings from "./Bookings";
-import Categories from "./Categories";
-import Services from "./Services";
-import ChatBox from "./ChatBox";
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import HomeScreen from "./HomeScreen";
+import Services from './Services'
+import Bookings from './Bookings'
+import ChatBox from './ChatBox'
+import SettingsScreen from './SettingsScreen'
 
 export default function Home({navigation}) {
   const Tab = createBottomTabNavigator();
@@ -51,6 +50,10 @@ export default function Home({navigation}) {
         <Tab.Screen name="Services" component={Services} />
         <Tab.Screen name="Bookings" component={Bookings} />
         <Tab.Screen name="Profile" component={SettingsScreen} />
+
+
+
+       
         
       </Tab.Navigator>
    

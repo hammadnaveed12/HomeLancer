@@ -15,7 +15,7 @@ function Bookings() {
                 backgroundColor: "#fff",
                 borderWidth:0.2,
                 borderBottomColor:"#2596be",
-                width: 350,
+                width: 370,
                 
                 elevation: 5,
                 shadowRadius: 8,
@@ -56,7 +56,7 @@ function Bookings() {
                 backgroundColor: "#fff",
                 borderWidth:0.2,
                 borderBottomColor:"#2596be",
-                width: 350,
+                width: 370,
                 
                 elevation: 5,
                 shadowRadius: 8,
@@ -91,7 +91,7 @@ function Bookings() {
             </View>
         </View>
 
-        <Text style={{fontSize:25,fontWeight:"600",marginTop:20,marginBottom:10}}>Completed Services(1)</Text>
+        <Text style={{fontSize:25,fontWeight:"600",marginTop:20,marginBottom:10}}>Completed Services (1)</Text>
         
         <View style={{padding: 10,
                 borderRadius: 20,
@@ -100,7 +100,7 @@ function Bookings() {
                 backgroundColor: "#fff",
                 borderWidth:0.2,
                 borderBottomColor:"#2596be",
-                width: 350,
+                width: 370,
                 
                 elevation: 5,
                 shadowRadius: 8,

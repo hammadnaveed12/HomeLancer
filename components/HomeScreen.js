@@ -69,6 +69,7 @@ function HomeScreen({ Login }) {
     },
   ];
   return (
+    <View style={{backgroundColor:"#fff",flex:1}}>
     <View
       style={{
         flex: 1,
@@ -113,11 +114,12 @@ function HomeScreen({ Login }) {
 
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{ flexDirection: "row", margin: 10, width: windowWidth }}>
-          <View style={{ flex: 0.8 }}>
+          <View style={{ width:windowWidth*.8 }}>
             <Text style={{ fontSize: 30 }}>Categories</Text>
           </View>
-          <View style={{ flex: 0.2, marginTop: 15 }}>
-            <Text style={{ color: "#2596be", fontSize: 16 }}>See All</Text>
+          <View style={{ width:windowWidth*.2,marginTop: 15 }}>
+            <TouchableOpacity  onPress={()=>{navigation.navigate("Categories")}}>
+            <Text style={{ color: "#2596be", fontSize: 16 }}>See All</Text></TouchableOpacity>
           </View>
         </View>
 
@@ -183,11 +185,15 @@ function HomeScreen({ Login }) {
           }}
         >
           <View style={{ flex: 0.8 }}>
-            <Text style={{ fontSize: 30 }}>NearBy Services</Text>
+            
+            <Text style={{ fontSize: 30 }}>NearBy Services</Text> 
           </View>
-          <View style={{ flex: 0.2 }}>
+          <TouchableOpacity onPress={()=>{navigation.navigate("Services")}}>
+          <View style={{ flex: 0.2,marginLeft:120 }}>
             <Text style={{ color: "#2596be", fontSize: 16 }}>See All</Text>
+
           </View>
+          </TouchableOpacity>
         </View>
 
         <FlatList
@@ -307,9 +313,11 @@ function HomeScreen({ Login }) {
           <View style={{ flex: 0.8 }}>
             <Text style={{ fontSize: 30 }}>Best Services</Text>
           </View>
-          <View style={{ flex: 0.2 }}>
+          <TouchableOpacity onPress={()=>{navigation.navigate("Services")}}>
+          <View style={{ marginLeft:120,flex: 0.1 }}>
             <Text style={{ color: "#2596be", fontSize: 16 }}>See All</Text>
           </View>
+          </TouchableOpacity>
         </View>
 
         <FlatList
@@ -415,6 +423,7 @@ function HomeScreen({ Login }) {
           )}
         />
       </ScrollView>
+    </View>
     </View>
   );
 }

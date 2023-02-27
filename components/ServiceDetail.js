@@ -135,12 +135,14 @@ export default function ServiceDetail(props,{navigation} ) {
               flex: 1,
             }}
           >
+            <TouchableOpacity onPress={()=>props.navigation.navigate("Profile")}>
             <Ionicons
               style={{}}
               name="chevron-forward-circle-outline"
               size={35}
               color="black"
             />
+            </TouchableOpacity>
           </View>
         </View>
 

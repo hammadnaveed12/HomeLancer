@@ -11,7 +11,10 @@ import ResetPassword from './components/ResetPassword'
 import Code from './components/Code';
 import ServiceDetail from './components/ServiceDetail';
 import Chat from './components/Chat'
-
+import Categories from './components/Categories';
+import Profile from './components/Profile'
+import Settings from './components/Settings';
+import Earnings from './components/Earnings';
 
 export default function App() {
 let   myVar="Dashbaord"
@@ -33,6 +36,10 @@ let   myVar="Dashbaord"
         <Stack.Screen name="ServiceDetail" component={ServiceDetail}></Stack.Screen>
         
         <Stack.Screen name="Chat" component={Chat}></Stack.Screen>
+        <Stack.Screen name="Categories" component={Categories}></Stack.Screen>
+        <Stack.Screen name="Profile" component={Profile}></Stack.Screen>
+        <Stack.Screen name="Settings" component={Settings}></Stack.Screen>
+        <Stack.Screen name="Earnings" component={Earnings}></Stack.Screen>
         </Stack.Navigator>
      </NavigationContainer>
   );
